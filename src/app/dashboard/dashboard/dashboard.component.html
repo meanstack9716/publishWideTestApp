@@ -1,0 +1,19 @@
+<div class="tabs-wrapper">
+    <mat-tab-group>
+        <mat-tab label="Ebook Royalty">
+            <app-ebook-royalty *ngIf="!apiLoading" [chartData]="ebookRoyalty"></app-ebook-royalty>
+        </mat-tab>
+        <mat-tab label="Paperback Royalty">
+            <app-paperback-royalty *ngIf="!apiLoading" [chartData]="paperbackRoyalty"></app-paperback-royalty>
+        </mat-tab>
+        <mat-tab label="Ad Spend">
+            <app-ad-spend *ngIf="!apiLoading" [chartData]="adSpend"></app-ad-spend>
+        </mat-tab>
+        <mat-tab label="Ad Impressions">
+            <app-ad-impressions *ngIf="!apiLoading" [chartData]="adImpressions"></app-ad-impressions>
+        </mat-tab>
+        <mat-tab label="Ad Clicks">
+            <app-ad-clicks *ngIf="!apiLoading" [chartData]="adClick"></app-ad-clicks>
+        </mat-tab>
+    </mat-tab-group>
+</div>
